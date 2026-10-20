@@ -16,3 +16,13 @@ export async function q1<T = any>(text: string, params: any[] = []): Promise<T |
   const rows = await q<T>(text, params);
   return rows[0];
 }
+
+export async function q1<T = any>(text: string, params: any[] = []): Promise<T | undefined> {
+  const rows = await q<T>(text, params);
+  return rows[0];
+}
+
+export async function q1<T = any>(text: string, params: any[] = []): Promise<T | undefined> {
+  const rows = await q<T>(text, params);
+  return rows[0];
+}
